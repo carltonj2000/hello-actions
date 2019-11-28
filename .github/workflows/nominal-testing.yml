@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-          ref: release
+          ref: refs/heads/release
       - name: Build Code
         run: pwd && whoami && ls -l && make && ls -l
       - name: Nominal Run
