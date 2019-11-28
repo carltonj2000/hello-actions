@@ -13,6 +13,6 @@ jobs:
         with:
           ref: refs/heads/release
       - name: Build Code
-        run: pwd && whoami && ls -l && make && ls -l
+        run: git branch && make && ls -l
       - name: Nominal Run
         run: ./hello
