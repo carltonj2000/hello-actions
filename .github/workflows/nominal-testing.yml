@@ -1,7 +1,9 @@
 name: Hello Testing
 
-on: [push]
-
+on:
+  push:
+    branches:
+    - release/*
 jobs:
   build-and-run:
     name: Build and Run
