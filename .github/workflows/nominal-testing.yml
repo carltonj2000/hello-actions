@@ -3,7 +3,7 @@ name: Hello Testing
 on:
   push:
     branches:
-    - release/*
+      - release
 jobs:
   build-and-run:
     name: Build and Run
