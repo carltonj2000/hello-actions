@@ -7,7 +7,7 @@ jobs:
     name: Build and Run
     runs-on: ubuntu-latest
     steps:
-      - use: actions/checkout@v1
+      - uses: actions/checkout@v1
       - name: Build Code
         run: pwd && whoami && ls -l && make
       - name: Nominal Run
